@@ -1,8 +1,8 @@
 import time
-import core.utils as utils
-from core.yolov4 import YOLOv4
+import core.min_utils as utils
 from PIL import Image
 from core.config import cfg
+import core.common
 
 import cv2
 import numpy as np
