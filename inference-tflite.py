@@ -7,7 +7,7 @@ import tensorflow as tf
 import core.min_utils as utils
 from core.config import cfg
 
-model_path = "/home/lordgrim/Work/VisioLab/tensorflow-yolov4-tflite/data/1-yolov4.tflite"
+model_path = "/home/lordgrim/Work/VisioLab/darknet2tf/models/1-yolov4.tflite"
 input_size = 416
 image_path = "/home/lordgrim/Work/VisioLab/smaller-data/Images/group_2028.jpg"
 

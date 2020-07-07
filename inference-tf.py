@@ -26,7 +26,7 @@ original_image_size = original_image.shape[:2]
 image_data = utils.image_preprocess(np.copy(original_image), [input_size, input_size])
 image_data = image_data[np.newaxis, ...].astype(np.float32)
 
-model_path = "models/final_tf_model5000"
+model_path = "models/yolov4_saved"
 model = load_model(model_path)
 model.summary()
 
