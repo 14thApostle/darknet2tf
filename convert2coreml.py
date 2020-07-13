@@ -22,7 +22,11 @@ model = load_model(model_path)
 model.summary()
 
 import coremltools as ct
-
+                
 # convert to Core ML
-mlmodel = ct.convert(model)
+mlmodel = ct.convert(model,
+        inputs=[ct.ImageType(scale=1/255.0)]
+                    )
+
+                    
 mlmodel.save(args.output)
